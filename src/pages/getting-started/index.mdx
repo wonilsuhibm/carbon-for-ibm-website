@@ -1,62 +1,92 @@
 ---
-title: Getting started
+title: Get started
 ---
 
 <PageDescription>
 
-This project is a [Gatsby theme](https://www.gatsbyjs.org/docs/themes/what-are-gatsby-themes/) that empowers developers, writers, and designers to create fast, accessible sites that look and feel like Carbon. Follow along to start creating your own site.
+The goals of IBM.com Library includes improving UI consistency and quality, while making the design and development process more efficient and focused. We also establish a shared vocabulary between designer and developer, providing clear and discoverable guidance around design and development best practices.
 
 </PageDescription>
 
-## First steps
+<InlineNotification>
 
-1. **Create your site** – use the gatsby CLI to bootstrap your site with the starter
+**Note:** Please note that IBM.com Library is part of a controlled adoption of the new Carbon Design System and is subject to change. Presently, it is only for DGC squads building IBM.com services and experience. If you have any questions, please don’t hesitate to [contact us](https://cognitive-app.slack.com/archives/C2PLX8GQ6).
 
-   ```sh
-   npx gatsby new my-carbon-site https://github.com/carbon-design-system/gatsby-starter-carbon-theme
-   ```
+</InlineNotification>
 
-2. **Start developing** – navigate into your directory with `cd my-carbon-site`.
+<AnchorLinks>
 
-   Start it up using one of the following snippets. You can tell which command to use based on the lock file at the root of your project (`yarn.lock` for yarn and `package-lock.json` for npm). For yarn, type `yarn develop` for npm, you'll use `npm run develop`.
+<AnchorLink>What is in IBM.com Library?</AnchorLink>
+<AnchorLink>Various paths for the adoption of Carbon across IBM.com</AnchorLink>
+<AnchorLink>Resources </AnchorLink>
 
-3. **Make some changes!** – open [localhost:8000](//localhost:8000) in your browser to see your site running.
+</AnchorLinks>
 
-   Each of the Items in your side bar correlates to a MDX file in your `src/pages/` directory. Navigate to a site and try editing the corresponding markdown file. You'll be able to see it update live!
 
-## 🔍 What's in here?
+## What is in IBM.com Library?
 
-Lets check out the structure of our project
+* IBM.com Library components, layout patterns, services, and utilities
+* Web-specific implementation guidelines 
+* Sketch design kit 
+* Examples and resources
+* Built-in metrics and accessibility compliance
+* Optimized code
 
-    .
-    ├── LICENSE
-    ├── README.md
-    ├── gatsby-config.js
-    ├── node_modules
-    ├── package.json
-    ├── public
-    ├── src
-    │   ├── data
-    │   ├── gatsby-theme-carbon
-    │   ├── images
-    │   └── pages
-    └── yarn.lock
+## Various paths for the adoption of Carbon across IBM.com
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+**For pages produced and published in the Marketing Platforms Drupal CMS, there is the Web Simplification path:** 
+Carbon will be made available through the creation of web simplification templates. The use of these templates as they become available is the path to Carbon because these templates are part of a new content model and publishing tool and have been studied and researched for their overall effectiveness. For more information, details are provided [here](https://w3.ibm.com/w3publisher/template-simplification).  
 
-1.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site.
+In the interim, while these templates are being designed and built-in CMS, page owners can use the Design Guidelines to configure existing pages to have the look and feel of IBM Design Language. Those Design Guidelines can be found [here](https://w3.ibm.com/w3publisher/squad-pulse/marketing-platforms/drupal-cms#Links). 
 
-    - **data** this is where you'll update your sidebar order and contents
-    - **images** you can colocate your images here or store them next to your pages, whichver you chose
-    - **gatsby-theme-carbon** this is where you'll override (known as shadowing) the default `gatsby-theme-carbon` components
-    - **pages** This is where most of your content will live. You'll represent each page with an MDX file.
+**For websites or applications built using v18 (Northstar), v19a, or earlier, there is the IBM.com Library path:**
+This website explains how to get started with the IBM.com Library. It provides links to the code repository, the storybook, usage guidelines, and additional resources for getting started. Keep in mind the following things as you get started:
 
-1.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+* Carbon and the IBM.com Library is built using Node Package Manager (NPM), not the Content Delivery Network (CDN), so it requires a complete development rewrite, unlike prior design systems.
+* Carbon has a new 2x grid so everything needs to be designed understanding that grid.
+* It is open source, so any adopters are invited to contribute to the open source IBM.com Library.
 
-1.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description. You'll notice that all of the configuration for the site is coming from `gatsby-theme-carbon`
+To assist adopters through this transition, Digital Design squad can consult with a team as they are getting started or as they are ready for review. Reach out on our slack channel at [#ibm-digital-design](https://ibm-studios.slack.com/archives/C2PLX8GQ6).
 
-1.  **`LICENSE`**: Gatsby is licensed under the Apache 2.0 license.
+## Resources 
 
-1.  **`yarn.lock`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+<Row className="resource-card-group">
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="Designing"
+      actionIcon="arrowRight"
+      href="/getting-started/designing"
+    >
+    </ResourceCard>
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="Coding"  
+      actionIcon="arrowRight"            
+      href="/getting-started/coding"
+    >
+    </ResourceCard>
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="Resources"
+      actionIcon="arrowRight"            
+      href="/resources"
+    >
 
-1.  **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+![Bee](../../images/bee_icon.svg)
+
+</ResourceCard>
+  </Column>
+  <Column colMd={4} colLg={4} noGutterSm>
+    <ResourceCard
+      subTitle="Help"    
+      actionIcon="arrowRight"            
+      href="/help"
+    >
+
+![Bee](../../images/bee_icon.svg)
+
+</ResourceCard>
+  </Column>
+</Row>
